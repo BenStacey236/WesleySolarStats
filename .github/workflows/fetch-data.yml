@@ -23,7 +23,7 @@ jobs:
       - name: Run the data fetch script
         env:
           MY_API_KEY: ${{ secrets.MY_API_KEY }}
-        run: python scripts/fetch_data.py
+        run: python scripts/fetch-carbon-saving.py
 
       - name: Commit and push updated data
         run: |
