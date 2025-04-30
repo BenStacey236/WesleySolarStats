@@ -22,7 +22,8 @@ jobs:
 
       - name: Run the data fetch script
         env:
-          MY_API_KEY: ${{ secrets.MY_API_KEY }}
+          API_KEY: ${{ secrets.API_KEY }}
+          DEVICE_SERIAL_NUMBER: ${{ secrets.DEVICE_SERIAL_NUMBER }}
         run: python scripts/fetch-carbon-saving.py
 
       - name: Commit and push updated data
