@@ -1,3 +1,4 @@
 foxesscloud==2.7.9
 requests
 python-dotenv
+matplotlib
