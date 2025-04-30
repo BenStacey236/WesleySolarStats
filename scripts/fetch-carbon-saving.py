@@ -1,11 +1,9 @@
 import os
-from dotenv import load_dotenv
 import json
 
 from SolarAPI import *
 
 if __name__ == "__main__":
-    load_dotenv()
     API_KEY = os.getenv('API_KEY')
     DEVICE_SERIAL_NUMBER = os.getenv('DEVICE_SERIAL_NUMBER')
 
